@@ -1,7 +1,7 @@
-from WhatItIs.PublicInterface.ApiEndpoints import ApiEndpoints
+from WhatItIs.PublicAPI.Endpoints import StartServerAndExposeEndpoints
 
 def main():
-    api = ApiEndpoints()
+    StartServerAndExposeEndpoints()
 
 
 
