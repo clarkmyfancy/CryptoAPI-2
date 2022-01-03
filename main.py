@@ -1,6 +1,7 @@
+from WhatItIs.PublicInterface.ApiEndpoints import ApiEndpoints
 
 def main():
-    pass
+    api = ApiEndpoints()
 
 
 

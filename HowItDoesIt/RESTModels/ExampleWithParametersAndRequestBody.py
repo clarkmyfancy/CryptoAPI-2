@@ -1,6 +1,5 @@
 from flask_restful import Resource, reqparse, request
 
-
 class ExampleWithParametersAndRequestBody(Resource):
     
     def get(self, name, age):

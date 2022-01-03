@@ -1,6 +1,6 @@
 import unittest
 
-from DataBridge import DataBridge
+from HowItDoesIt.DataBridge.DataBridge import *
 
 class Test_DataBridge(unittest.TestCase):
     def setUp(self):
@@ -10,14 +10,14 @@ class Test_DataBridge(unittest.TestCase):
         pass
 
     def test_getting_api_key_secrets(self):
-        secrets = DataBridge.getApiKeySecrets()
+        secrets = getApiKeySecrets()
         self.assertIsNotNone(secrets, "No CoinMarketCap API Key found")
 
     def test_adding_to_cryptos_of_interest(self):
-        cryptos_1 = DataBridge.getCryptosOfInterest()
+        cryptos_1 = getCryptosOfInterest()
         ticker = "abc123"
-        DataBridge.addToCryptosOfInterest(ticker)
-        cryptos_2 = DataBridge.getCryptosOfInterest()
+        addToCryptosOfInterest(ticker)
+        cryptos_2 = getCryptosOfInterest()
         self.assertIsNot(cryptos_1, cryptos_2, "cryptos_of_interest is same before AND after the new ticker was added")
 
     

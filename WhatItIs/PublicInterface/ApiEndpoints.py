@@ -2,9 +2,9 @@
 from flask import Flask
 from flask_restful import Api
 
-from PublicInterface.RESTModels.Cryptos import Cryptos
-from PublicInterface.RESTModels.CryptosAndPrices import CryptosAndPrices
-from PublicInterface.RESTModels.ExampleWithParametersAndRequestBody import ExampleWithParametersAndRequestBody
+from HowItDoesIt.RESTModels.Cryptos import Cryptos
+from HowItDoesIt.RESTModels.CryptosAndPrices import CryptosAndPrices
+from HowItDoesIt.RESTModels.ExampleWithParametersAndRequestBody import ExampleWithParametersAndRequestBody
 
 class ApiEndpoints:
 

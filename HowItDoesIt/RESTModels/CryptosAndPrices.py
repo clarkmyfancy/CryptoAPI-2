@@ -1,8 +1,7 @@
 from flask_restful import Resource, reqparse
 
-from DataBridge.DataBridge import getCryptosOfInterest
-from CoinMarketCapApi.Api import Api
-
+from HowItDoesIt.DataBridge.DataBridge import getCryptosOfInterest
+from HowItDoesIt.CoinMarketCapApi.Api import Api
 
 
 class CryptosAndPrices(Resource):

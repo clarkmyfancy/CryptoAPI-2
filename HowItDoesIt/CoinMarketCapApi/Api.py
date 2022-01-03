@@ -2,7 +2,7 @@ from requests import Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
 
-from DataBridge.DataBridge import getApiKeySecrets, getCryptosOfInterest
+from HowItDoesIt.DataBridge.DataBridge import getApiKeySecrets
 
 
 class Api:
